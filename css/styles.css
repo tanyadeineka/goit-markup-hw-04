@@ -214,7 +214,11 @@ ul {
   color: var(--secondary-text-color);
 }
 .feature-icon {
-  padding: 25px 100px;
+  height: 120px;
+  width: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--bcg-feature);
   border-radius: 4px;
   margin-bottom: 30px;
@@ -295,7 +299,8 @@ ul {
   justify-content: center;
   fill: var(--client-icon-color);
 }
-.soc-link:hover {
+.soc-link:hover,
+.soc-link:focus {
   background-color: var(--accent-color);
   fill: var(--white-color);
 }
@@ -326,7 +331,8 @@ ul {
   align-items: center;
   justify-content: center;  
 }
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
   fill: var(--accent-color);
@@ -364,6 +370,10 @@ ul {
 .map-link {
   color: var(--white-color);
   text-decoration: none;
+}
+.map-link:hover,
+.map-link:focus {
+  color: var(--accent-color);
 }
 .contact-link {
   color: var(--footer-contacts);
@@ -407,7 +417,8 @@ ul {
   justify-content: center;
   fill: var(--white-color);
 }
-.f-soc-link:hover {
+.f-soc-link:hover,
+.f-soc-link:focus {
   background-color: var(--accent-color);
   fill: var(--white-color);
 }
@@ -465,7 +476,8 @@ ul {
 .projects-container {
   text-decoration: none;
 }
-.projects-item:hover {
+.projects-item:hover,
+.projects-item:focus {
   box-shadow: 0px 1px 1px var(--box-shadow-command1), 
               0px 4px 4px var(--box-shadow-project1), 
               1px 4px 6px var(--box-shadow-project2);
