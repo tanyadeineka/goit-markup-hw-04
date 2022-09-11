@@ -2,8 +2,8 @@
   --bcg-black: #2f303a;
   --bcg-main: #f5f4fa;
   --bcg-overlay: rgba(47, 48, 58, 0.4);
-  --bcg-title: #C4C4C4;
-  --bcg-feature:#F5F4FA; 
+  --bcg-title: #c4c4c4;
+  --bcg-feature: #f5f4fa;
   --accent-color: #2196f3;
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
@@ -15,12 +15,12 @@
   --box-shadow-command2: rgba(0, 0, 0, 0.14);
   --box-shadow-command3: rgba(0, 0, 0, 0.2);
   --box-shadow-filters1: rgba(0, 0, 0, 0.1);
-  --box-shadow-filters2: rgba(0, 0, 0, 0.08); 
+  --box-shadow-filters2: rgba(0, 0, 0, 0.08);
   --box-shadow-project1: rgba(0, 0, 0, 0.06);
   --box-shadow-project2: rgba(0, 0, 0, 0.16);
   --head-border: #ececec;
   --project-border: #eeeeee;
-  --client-icon-color: #AFB1B8;
+  --client-icon-color: #afb1b8;
 }
 
 body {
@@ -145,8 +145,8 @@ ul {
   max-width: 1600px;
   margin: 0 auto;
   background-color: var(--bcg-title);
-  background-image: linear-gradient(var(--bcg-overlay), var(--bcg-overlay)), 
-                    url('../images/bcg-main.jpg');
+  background-image: linear-gradient(var(--bcg-overlay), var(--bcg-overlay)),
+    url("../images/bcg-main.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -177,7 +177,7 @@ ul {
 
 .features-title,
 .work,
-.command, 
+.command,
 .clients-title {
   font-weight: 700;
   font-size: 36px;
@@ -329,7 +329,7 @@ ul {
   fill: var(--client-icon-color);
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
 }
 .clients-link:hover,
 .clients-link:focus {
@@ -456,9 +456,9 @@ ul {
 .filters-btn:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px var(--box-shadow-filters1), 
-            0px 1px 2px var(--box-shadow-filters2), 
-            0px 2px 2px var(--box-shadow-command1);
+  box-shadow: 0px 3px 1px var(--box-shadow-filters1),
+    0px 1px 2px var(--box-shadow-filters2),
+    0px 2px 2px var(--box-shadow-command1);
   border-radius: 4px;
 }
 .filters-item:not(:last-of-type) {
@@ -475,12 +475,13 @@ ul {
 }
 .projects-container {
   text-decoration: none;
+  display: block;
 }
-.projects-item:hover,
-.projects-item:focus {
-  box-shadow: 0px 1px 1px var(--box-shadow-command1), 
-              0px 4px 4px var(--box-shadow-project1), 
-              1px 4px 6px var(--box-shadow-project2);
+.projects-container:hover,
+.projects-container:focus {
+  box-shadow: 0px 1px 1px var(--box-shadow-command1),
+    0px 4px 4px var(--box-shadow-project1),
+    1px 4px 6px var(--box-shadow-project2);
 }
 .project-name {
   font-weight: 700;
